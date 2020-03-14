@@ -5,7 +5,7 @@ DEMO
   
 解説  
 [https://www.petitmonte.com/ruby/vue_crud.html](https://www.petitmonte.com/ruby/vue_crud.html) ※準備中
-  
+   
 [mpp_vue_crudの意味]  
 mpp = My Practice Project  
 vue = Vue.js  
