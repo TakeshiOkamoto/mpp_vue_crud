@@ -115,7 +115,7 @@ export default {
     // ---------------------
     //  Ajax通信(送信用)
     // ---------------------  
-    run_ajax(method, url, data){
+    run_ajax: function(method, url, data) {
       
       fetch(url, 
            {
@@ -151,6 +151,7 @@ export default {
                                     comment: result.comment,
                                     updated_at: result.updated_at}
                                    );    
+                this.mode.unshift(false);
               }
             // 更新/削除
             }else{
@@ -171,14 +172,14 @@ export default {
     // ---------------------      
     //  日付操作 
     // ---------------------      
-    formatConversion: function (updated_at) {
+    formatConversion: function(updated_at) {
       return format(new Date(Date.parse(updated_at)), 'yyyy年MM月dd日(iiiii) HH:mm:ss', {locale: ja});
     },
     
     // ---------------------       
     //  データの登録
     // ---------------------   
-    handleInsert(event){    
+    handleInsert: function(event) {    
       
       if (this.name && this.comment){
         
@@ -229,6 +230,7 @@ export default {
     handleDelete: function (index, id, event) {
       
       this.items.splice(index, 1);
+      this.mode.splice(index, 1);
       
       // Ajax
       this.run_ajax("DELETE",
