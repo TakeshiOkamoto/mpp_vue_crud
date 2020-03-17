@@ -1,4 +1,4 @@
-# Rails + Vue.js + AjaxでCRUDのサンプルプロジェクト
+# Rails + Vue.js + AjaxでCRUDのサンプルプロジェクト 
   
 DEMO    
 [https://www.petitmonte.com/rails-demo/vue_crud](https://www.petitmonte.com/rails-demo/vue_crud)  
